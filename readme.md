@@ -15,10 +15,12 @@ Developers like to refer to containers by their name. To do so, these names have
 
 Add below to /etc/hosts
 192.0.2.2	node-master
+
 192.0.2.3	node-one
+
 192.0.2.4	node-two
 
-It always helps to ensure no other docker network already occupy the above space. if they do, please clean them up (docker network prune and its more options) or choose another private network. 
+It always helps to ensure no other docker network occupies the above space. if they do, please clean them up (docker network prune and its more options) or choose another private network. 
   
 How to run
 ----------
@@ -39,4 +41,5 @@ Services:
 Setting up a production cluster from this needs a lot more work. However you are ready to begin building data/ml applications.
 
 node-master:50070  <---- hdfs overview
+
 node-master:8088   <---- yarn cluster overview	
