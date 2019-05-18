@@ -13,7 +13,8 @@ Some Networking issues
 ----------------------
 Developers like to refer to containers by their name. To do so, these names have to be added to the /etc/hosts file (in the host machine ofcourse). The repo uses the private network "192.0.2.1/16".
 
-Add below to /etc/hosts
+Add below to /etc/hosts:
+
 192.0.2.2	node-master
 
 192.0.2.3	node-one
@@ -42,4 +43,6 @@ Setting up a production cluster from this needs a lot more work. However you are
 
 node-master:50070  <---- hdfs overview
 
-node-master:8088   <---- yarn cluster overview	
+node-master:8088   <---- yarn cluster overview
+
+
