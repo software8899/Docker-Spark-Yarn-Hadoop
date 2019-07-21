@@ -54,6 +54,7 @@ if [[ $1 = "-node-master" || $2 = "-node-master" ]]; then
   $HADOOP_PREFIX/sbin/start-dfs.sh
   $HADOOP_PREFIX/sbin/start-yarn.sh
   $HADOOP_PREFIX/bin/hdfs dfs -mkdir /spark-logs
+  $HADOOP_PREFIX/bin/hdfs dfs -copyFromLocal /tmp/exercise /tmp
   $SPARK_HOME/sbin/start-history-server.sh
 fi
 

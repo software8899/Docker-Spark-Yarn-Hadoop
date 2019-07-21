@@ -78,3 +78,10 @@ ENV PATH $PATH:$SPARK_PREFIX/bin
 ADD /conf/spark-defaults.conf $SPARK_HOME/conf/spark-defaults.conf
 
 RUN apt-get install wget -y
+
+RUN mkdir -p /tmp/exercise
+ADD /exercise/brochure_clicks.json /tmp/exercise/brochure_clicks.json
+ADD /exercise/brochures.json /tmp/exercise/brochures.json
+ADD /exercise/page_turns.json /tmp/exercise/page_turns.json
+ADD /exercise/enters.json /tmp/exercise/enters.json
+ADD /exercise/exits.json /tmp/exercise/exits.json
